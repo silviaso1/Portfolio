@@ -1,0 +1,25 @@
+.Header{
+    color: white;
+    background-color: rgb(24, 41, 26) ;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 1rem;
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+
+}
+li{
+    margin-left: 45px;
+    padding: 5px;
+}
+
+#home{
+    background-color: rgb(255, 187, 0);
+    border-radius: 5px;
+    color: black;
+    margin: 0;
+}

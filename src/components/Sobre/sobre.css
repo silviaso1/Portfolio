@@ -1,0 +1,53 @@
+.Sobre{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+#eu{
+    width: 300px;
+    height: 290px;
+    border-radius:50%;
+    border: 5px solid rgba(51, 75, 53, 1);
+    transform: rotate(-6deg);
+    
+}
+#hide{
+    display: none;
+}
+
+.title{
+    font-size: 1.7rem;
+}
+
+#sobre-mim{
+    font-size: 1.4rem;
+    margin: 50px 0 0 50px;
+}
+
+#sobre-mim span{
+    color: rgb(255, 133, 19);
+}
+
+.Sobre button{
+    background-color: rgb(255, 133, 19);
+    border-radius: 25px;
+    border:  2px solid rgb(255, 133, 19);
+    margin-top: 45px;
+    width: 45%;
+}
+
+@media (max-width: 768px) {
+
+
+   #hide{
+    display: block;
+   }
+   #exibindo{
+    display: none;
+   }
+}

@@ -1,0 +1,53 @@
+.Inicio{
+    height: 400px;
+    background-color: rgb(24, 41, 26) ;
+    text-align: center;
+    font-size: 2.7rem;
+}
+.move{
+    position: relative;
+    bottom: 350px;
+    color: transparent;
+    -webkit-text-stroke: 0.1px rgb(255, 133, 19); 
+}
+#white{
+    z-index: 1;
+    color: transparent; /* Faz o interior das letras transparente */
+    -webkit-text-stroke: 0.1px rgb(241, 238, 238); /* Define a espessura e a cor das bordas */
+}
+#barra-container{
+    height: 200px;
+    background-image: url('../imgs/fundo.jpg');
+}
+#fotoTop{
+    position: relative;
+    top: 105px;
+    right: 20%;
+    z-index: 1;
+    height: 400px;
+    width: 35%;
+    border-radius: 50px;
+    
+}
+
+@media (max-width: 600px) {
+
+    .Inicio{
+        font-size: 2rem;
+    }
+
+    .move{
+        bottom: 0px;
+        top: 140px;
+    }
+    #fotoTop{
+        right: 30%;
+        width: 55%;
+        height: 370px;
+        display: none;
+    }
+    #barra-container{
+        height: 170px;
+    }
+
+ }
