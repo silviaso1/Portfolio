@@ -1,3 +1,4 @@
+
 .tecnologias-container {
     display: flex;
     justify-content: center;
@@ -9,16 +10,18 @@
 .tecnologia-card {
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
-    text-align: center;
+    width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border: 2px solid white;
+    background-color: rgb(29, 29, 29);
+    padding-bottom: 40px;
 }
 
 .tecnologia-card h3 {
     font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 10px;
+    padding-top: 20px;
 }
 
 .tecnologia-card p {
@@ -30,12 +33,12 @@
 .icon-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+
 }
 
 .icon-grid img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     filter: grayscale(100%);
     transition: filter 0.3s ease;

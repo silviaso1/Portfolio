@@ -1,5 +1,6 @@
 import './sobre.css'
-import Foto from '../imgs/foto5.jpeg';
+import curriculo from '../imgs/Curriculo.pdf'
+import Eu from '../imgs/foto5.jpeg';
 
 export function Sobre(){
     return (
@@ -10,28 +11,17 @@ export function Sobre(){
         <section id='exibindo'>
         <div class="title">
             <h1>Hello,</h1>
-            <h1>Eu sou a Silvia!</h1>
+            <h1>Eu sou a <span>Silvia! :)</span></h1>
         </div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. adipisicing elit</p>
-        <button>Baixe meu Currículo!</button>
+        <div id='quem-sou'>
+        <p>Estudante de Análise e desenvolvimento de sistemas na FAETERJ-RIO, atualmente no 4° semestre, com um forte interesse na área de Desenvolvimento Web. Estou em busca de uma oportunidade de estágio onde eu possa aplicar meus conhecimentos teóricos em um ambiente prático, colaborar com profissionais experientes e continuar meu desenvolvimento</p>
+        <a href={curriculo} download="curriculo-silvia-soares"><button>Baixe meu Currículo!</button></a>
+        </div>
         </section>
-        <img src={Foto} alt="" id='eu'/>
 
-
-
-        <section id='hide'>
-        <h1>Hello,</h1>
-        <h1>Eu sou a Silvia</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <section>
+            <img src={Eu} alt="" id='eu' />
         </section>
-        
      </div>
         </>
     )

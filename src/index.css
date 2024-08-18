@@ -2,10 +2,23 @@
 
 *{
     margin: 0;
-    font-family:  "Yeseva One", serif;
+    font-family:  "Yeseva One", serif !important;
     text-decoration: none;
     
-    a:visited {
-        color: inherit;
-    }
   }
+
+  :root{
+    background-color: #1e1e1e;
+    font-family:  "Yeseva One", serif;
+  }
+
+  button{
+    cursor: pointer;
+  }
+
+a{
+    color: inherit;
+}
+a:visited {
+    color: inherit;
+}

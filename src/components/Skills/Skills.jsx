@@ -4,7 +4,7 @@ import { Tecnologias } from '../Tecnologias/Tecnologias'
 export function Skills(){
     return (
         <div className='Skills' id='skills'>
-            <h1 id='destaque'>Técnologias</h1>
+            <h1 id='destaque'>TÉCNOLOGIAS</h1>
             <Tecnologias />
         </div>
     )

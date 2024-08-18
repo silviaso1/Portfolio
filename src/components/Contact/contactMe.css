@@ -1,0 +1,131 @@
+.ContactMe{
+    text-align: center;
+    color: white;
+}
+.contact-me-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-family:  "Yeseva One", serif;
+}
+
+/* Estilo do título do formulário */
+.contact-me-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #1abc9c;
+}
+
+/* Estilo das informações de contato */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.info-icon {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #1abc9c;
+}
+
+/* Estilo do formulário */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+#dados{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid #2b2b36;
+    background-color: #2b2b36;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+/* Estilo do botão de envio */
+.submit-button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #16a085;
+}
+
+/* Mensagem de status após envio */
+.status-message {
+    margin-top: 20px;
+    color: #1abc9c;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Responsividade: garante que o formulário não ocupe toda a tela */
+@media (max-width: 768px) {
+    .contact-me-container {
+        width: 90%;
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-item {
+        margin-bottom: 15px;
+    }
+}

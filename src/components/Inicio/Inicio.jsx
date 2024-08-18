@@ -1,18 +1,18 @@
 import './inicio.css';
-import Foto from '../imgs/background6.png';
+import Foto from '../imgs/foto5.jpeg';
 
 export function Inicio() {
     return (
         <>
             <div className='Inicio'>
-                <img src={Foto} alt="" id='fotoTop'/>
-                <h1 className="move" id='white'>PORTFÓLIO</h1>
-                <h1 className="move">PORTFÓLIO</h1>
-                <h1 className="move">PORTFÓLIO</h1>
-                <h1 className="move">PORTFÓLIO</h1>
+                <h1 className="move" id='white'>DESENVOLVEDORA</h1>
             </div>
             <div id="barra-container">
-                <h2>.</h2>
+                <div id='text'>
+                    <img src={Foto} alt="eu"  id='me'/>
+                    <h4>FRONT END</h4>
+                    <h4>UI/UX DESIGNER</h4>
+                </div>
             </div>
         </>
     );
