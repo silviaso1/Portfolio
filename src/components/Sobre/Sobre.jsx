@@ -7,7 +7,6 @@ export function Sobre(){
         <>
         <h3 id='sobre-mim'><span>#</span>Sobre mim</h3>
         <div className='Sobre' id='sobre'>
-        
         <section id='exibindo'>
         <div class="title">
             <h1>Hello,</h1>
@@ -20,8 +19,12 @@ export function Sobre(){
         </section>
 
         <section>
-            <img src={Eu} alt="" id='eu' />
-        </section>
+    <div className="foto-container">
+        <div className="circulo"></div>
+        <img src={Eu} alt="" id='eu' />
+    </div>
+</section>
+
      </div>
         </>
     )

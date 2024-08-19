@@ -9,20 +9,38 @@
     margin-bottom: 50px;
     background-color: #1e1e1e;
     color: white;
-    
+
 }
-#eu{
-    width: 300px;
-    height: 290px;
-    border-radius:50%;
+.foto-container {
+    position: relative; /* Permite posicionar o círculo de sobreposição em relação ao contêiner */
+    display: inline-block; /* Garante que o contêiner ajuste ao tamanho da imagem */
+}
+
+#eu {
+    width: 360px;
+    height: 350px;
+    border-radius: 50%;
     border: 5px solid rgb(40, 46, 40);
     transform: rotate(-6deg);
-   
-    
+    position: relative; /* Garante que a imagem esteja no topo do círculo */
+    z-index: 1;
+    display: none; /* Garante que a imagem fique acima do círculo */
 }
-#hide{
+
+.circulo {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 90%; /* Ajuste para garantir que o círculo seja maior que a imagem */
+    height: 90%; /* Ajuste para garantir que o círculo seja maior que a imagem */
+    background-color: rgba(159, 66, 235, 0.5); /* Cor e opacidade da sobreposição */
+    border-radius: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o círculo */
+    z-index: 0; /* Coloca o círculo atrás da imagem */
     display: none;
 }
+
+
 
 .title{
     font-size: 1.7rem;
@@ -35,8 +53,11 @@
 
 #sobre-mim{
     font-size: 1.6rem;
-    margin: 50px 0 50px 110px;
+    margin: 0px 0 0px 130px;
     color: white;
+    margin-top: 105px;
+    margin-bottom: -40px;
+    
 }
 
 #quem-sou{

@@ -1,85 +1,135 @@
 .Formacao {
-    padding: 50px;
-    background-color: #353434;
-    color: #ffffff;
-  }
+  padding: 50px;
+  background-color: #353434;
+  color: #ffffff;
+  text-align: center;
+}
 
+.experiencia-titulo {
+  color: transparent;
+  font-size: 2.5rem;
+  -webkit-text-stroke: 0.25px #3cdd8e;
+  margin-top: -2px;
+  margin-bottom: 30px;
+}
 
-  .experiencia-titulo {
-  
-    color: transparent;
-    font-size: 2.5rem;
-    -webkit-text-stroke: 0.25px #3cdd8e;
-    text-align: center;
-    margin-top: -2px;
-    margin-bottom: 10px;
-  }
-  
-  .experiencia-subtitulo {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-  
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline-titulo, .curso-titulo {
+  font-size: 20px;
+  color: #b6f829;
+  margin-bottom: 20px;
+}
+
+.linha-tempo {
+  position: absolute;
+  width: 4px;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 1%;
+  transform: translateX(-50%);
+  z-index: 0; /* Certifique-se de que a linha esteja atrás das bolinhas */
+}
+
+.experiencia-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  z-index: 1; /* Coloca os itens acima da linha */
+}
+
+.experiencia-bolinha {
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  border-radius: 50%;
+  border: 2px solid #000;
+  position: absolute;
+  left: -5%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.experiencia-detalhes {
+  flex: 1;
+  text-align: left;
+  padding-left: 40px;
+  max-width: 600px;
+}
+
+.experiencia-detalhes h4 {
+  font-size: 1.6rem;
+  width: 220px;
+  margin: 0;
+}
+
+.experiencia-empresa {
+  color: #3cdd8e;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.experiencia-periodo {
+  font-size: 16px;
+  color: #bbbbbb;
+  margin-bottom: 10px;
+}
+
+.experiencia-descricao {
+  flex: 2;
+  text-align: left;
+  padding-right: 40px;
+  max-width: 600px;
+}
+
+.experiencia-descricao p {
+  margin-left: 7px;
+}
+
+.experiencia-ferramentas {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #bbbbbb;
+}
+
+.experiencia-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   .experiencia-item {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .experiencia-detalhes{
-    background-color: rgb(29, 29, 29);
-    position: relative;
-    margin-right: 20px;
-    width: 400px;
+  .experiencia-detalhes, .experiencia-descricao {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .experiencia-detalhes::before{
-    content: '';
-    display: block;
-    width: 6px;
-    height: 20px;
-    background: linear-gradient(#b6f829,#67dd0a);
-    position: absolute;
-    left: -8px;
-    top: 40px;
-  }
-  
-  
-  .experiencia-detalhes h4 {
-    font-size: 1.6rem;
-    margin: 0;
-    
+  .experiencia-bolinha {
+    left: 20px;
+    transform: translateX(0);
   }
 
-  .experiencia-empresa {
-    color: #3cdd8e;
-    font-size: 18px;
-    margin: 5px 0;
+  .linha-tempo {
+    left: 20px;
+    transform: translateX(0);
   }
-  
-  .experiencia-periodo {
-    font-size: 16px;
-    color: #bbbbbb;
-  }
-  
-  .experiencia-descricao{
-    width: 450px;
-  }
-  .experiencia-descricao p {
-    margin-left: 7px;
-  }
-  
-  .experiencia-ferramentas {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #bbbbbb;
-  }
-  
-  .experiencia-icons img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
+}
