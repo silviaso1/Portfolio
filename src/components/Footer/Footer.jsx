@@ -7,29 +7,19 @@ export function Footer() {
         <footer className="footer">
             <div className="footer-container">
 
-                {/* Links Rápidos */}
-                <div className="footer-section quick-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
 
                 {/* Redes Sociais */}
                 <div className="footer-section social-media">
-                    <h4>Follow Me</h4>
+                    <h4>Minhas redes</h4>
                     <div className="social-icons">
-                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                        <a href="https://github.com/silviaso1" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                        <a href="https://linkedin.com/in/silviaso1" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                     </div>
                 </div>
 
                 {/* Contato */}
                 <div className="footer-section contact-info">
-                    <h4>Contact</h4>
+                    <h4>Contato</h4>
                     <p><FaEnvelope /> silviasoares423@gmail.com</p>
                 </div>
             </div>

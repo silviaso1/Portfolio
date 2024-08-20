@@ -1,8 +1,25 @@
+/* Estilos gerais da seção de formação */
 .Formacao {
   padding: 50px;
   background-color: #353434;
   color: #ffffff;
   text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.Formacao.fade-in {
+  opacity: 1;
+}
+
+/* Efeito de fade-in */
+.experiencia-item {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.Formacao.fade-in .experiencia-item {
+  opacity: 1;
 }
 
 .experiencia-titulo {
@@ -10,7 +27,7 @@
   font-size: 2.5rem;
   -webkit-text-stroke: 0.25px #3cdd8e;
   margin-top: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .timeline {
@@ -35,9 +52,11 @@
   background-color: #000;
   top: 0;
   bottom: 0;
-  left: 1%;
+  left: -1%;
   transform: translateX(-50%);
-  z-index: 0; /* Certifique-se de que a linha esteja atrás das bolinhas */
+  z-index: 0;
+  height: 145px;
+  margin-top: 35px; /* Certifique-se de que a linha esteja atrás das bolinhas */
 }
 
 .experiencia-item {
@@ -52,13 +71,13 @@
 }
 
 .experiencia-bolinha {
-  width: 14px;
+  width: 17px;
   height: 14px;
   background: linear-gradient(#b6f829, #67dd0a);
-  border-radius: 50%;
   border: 2px solid #000;
   position: absolute;
-  left: -5%;
+  left: -2.7%;
+  top: 40px;
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -68,11 +87,12 @@
   text-align: left;
   padding-left: 40px;
   max-width: 600px;
+  background-color: #1f1e1e;
 }
 
 .experiencia-detalhes h4 {
   font-size: 1.6rem;
-  width: 220px;
+  width: 270px;
   margin: 0;
 }
 
@@ -92,7 +112,6 @@
   flex: 2;
   text-align: left;
   padding-right: 40px;
-  max-width: 600px;
 }
 
 .experiencia-descricao p {
@@ -116,20 +135,23 @@
   .experiencia-item {
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 20px;
   }
 
   .experiencia-detalhes, .experiencia-descricao {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .experiencia-bolinha {
-    left: 20px;
-    transform: translateX(0);
+    padding: 0;
+    max-width: 100%;
   }
 
   .linha-tempo {
-    left: 20px;
-    transform: translateX(0);
+    left: 0;
+  }
+
+  .experiencia-bolinha {
+    left: 0;
+  }
+
+  .timeline {
+    width: 100%;
   }
 }

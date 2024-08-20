@@ -4,8 +4,17 @@
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
-    background-color:#353434;
+    background-color: #353434;
     color: #fff;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    height: 720px;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio.fade-in {
+    opacity: 1;
 }
 
 .portfolio h1 {
@@ -13,10 +22,9 @@
     text-align: center;
     -webkit-text-stroke: 0.25px rgb(102, 19, 255);
     color: transparent;
-    margin-top: 70px ;
 }
 
-.portfolio h3{
+.portfolio h3 {
     margin-bottom: 50px;
     margin-top: 30px;
 }
@@ -72,6 +80,7 @@
 @media (max-width: 768px) {
     .portfolio {
         padding: 20px 10px;
+        height: auto;
     }
 
     .portfolio h1 {

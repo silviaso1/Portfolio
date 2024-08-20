@@ -1,5 +1,5 @@
-.Sobre{
-    height: 400px;
+.Sobre {
+    height: 450px; /* Permite que a altura se ajuste ao conteúdo */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,78 +9,96 @@
     margin-bottom: 50px;
     background-color: #1e1e1e;
     color: white;
-
-}
-.foto-container {
-    position: relative; /* Permite posicionar o círculo de sobreposição em relação ao contêiner */
-    display: inline-block; /* Garante que o contêiner ajuste ao tamanho da imagem */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-#eu {
-    width: 360px;
-    height: 350px;
-    border-radius: 50%;
-    border: 5px solid rgb(40, 46, 40);
-    transform: rotate(-6deg);
-    position: relative; /* Garante que a imagem esteja no topo do círculo */
-    z-index: 1;
-    display: none; /* Garante que a imagem fique acima do círculo */
+.Sobre.fade-in {
+    opacity: 1;
 }
 
 .circulo {
     position: absolute;
     top: 50%;
-    left: 60%;
-    width: 90%; /* Ajuste para garantir que o círculo seja maior que a imagem */
-    height: 90%; /* Ajuste para garantir que o círculo seja maior que a imagem */
+    left: 50%;
+    width: 120%; /* Ajuste para garantir que o círculo seja maior que a imagem */
+    height: 120%; /* Ajuste para garantir que o círculo seja maior que a imagem */
     background-color: rgba(159, 66, 235, 0.5); /* Cor e opacidade da sobreposição */
     border-radius: 50%;
     transform: translate(-50%, -50%); /* Centraliza o círculo */
     z-index: 0; /* Coloca o círculo atrás da imagem */
-    display: none;
+    display: block; /* Garante que o círculo seja visível */
 }
 
-
-
-.title{
+.title {
     font-size: 1.7rem;
+    text-align: center;
 }
 
-.title span{
-    color: rgb(200, 19, 255);
-    
-}
-
-#sobre-mim{
-    font-size: 1.6rem;
-    margin: 0px 0 0px 130px;
-    color: white;
-    margin-top: 105px;
-    margin-bottom: -40px;
-    
-}
-
-#quem-sou{
-    width: 680px;
-    margin-right: 40px;
-}
-
-#sobre-mim span{
+.title span {
     color: rgb(200, 19, 255);
 }
 
-.Sobre button{
+#quem-sou {
+    width: 50%; /* Ajusta a largura para preencher o contêiner */
+    margin: 20px 0;
+    font-size: 1.4rem; /* Adiciona margem superior e inferior */
+}
+
+#exibindo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre-mim span {
+    color: rgb(200, 19, 255);
+}
+
+.Sobre button {
     background-color: rgb(200, 19, 255);
     border-radius: 25px;
-    border:  2px solid rgb(200, 19, 255);
-    margin-top: 45px;
-    width: 45%;
+    border: 2px solid rgb(200, 19, 255);
+    margin-top: 20px; /* Ajusta a margem superior */
+    width: 200px; /* Define uma largura fixa para o botão */
+    color: white;
+    display: block;
+    margin-left: auto; /* Centraliza o botão */
+    margin-right: auto; /* Centraliza o botão */
 }
 
 @media (max-width: 768px) {
-
-    .Sobre{
-        flex-direction: row-reverse;
+    .Sobre {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
     }
 
- }
+    #eu {
+        width: 180px; /* Ajusta o tamanho da imagem para dispositivos móveis */
+        height: 180px; /* Ajusta o tamanho da imagem para dispositivos móveis */
+    }
+
+    .foto-container {
+        margin: 20px 0; /* Ajusta a margem para dispositivos móveis */
+    }
+
+    .title {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte do título */
+    }
+
+    #sobre-mim {
+        font-size: 1.4rem; /* Ajusta o tamanho da fonte do texto */
+        margin: 20px; /* Ajusta as margens */
+    }
+
+    #quem-sou {
+        width: 100%; /* Ajusta a largura */
+        margin: 20px 0; /* Ajusta a margem */
+    }
+
+    .Sobre button {
+        width: 80%; /* Ajusta a largura do botão */
+        font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
+    }
+}

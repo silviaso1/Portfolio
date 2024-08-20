@@ -1,66 +1,90 @@
-.Inicio{
-    height: 100vh;
-    background-image: url("https://i.pinimg.com/564x/60/3b/20/603b207b2fc3817822962fe385d0d084.jpg");
+/* Estilos da seção Inicio */
+.Inicio {
+    height: 110vh;
+    background-image: url("../imgs/c57fe9756a2e8efc3dc6b07bdd5d41b0.jpg");
     background-size: cover;
-    text-align: center;
-    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
     position: relative;
-    z-index: -1;
+    z-index: 1;
     top: -40px;
 }
-.move{
-    color: transparent;
-    -webkit-text-stroke: 0.1px #3cdd8e;
-    position: relative;
-    top: 20px; 
-    margin-left: -20px;
-}
-#white{
-    z-index: 1;
-    color: transparent; /* Faz o interior das letras transparente */
-    -webkit-text-stroke: 0; /* Define a espessura e a cor das bordas */
-}
-#barra-container{
-    height: 0px;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
 
-#text{
-    font-size: 1.2rem;
+#text {
+    font-size: 2.1rem;
     color: wheat;
-    height: 250px;
-    width: auto;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-left: -20px;
+    margin-bottom: 20px;
 }
 
-#me{
-    height: 150px;
-    width: 150px;
+#text h4 {
+    max-width: 400px;
+}
+
+#me {
+    height: 220px;
+    width: 220px;
     border-radius: 50%;
-    margin-top: -250px;
     transform: rotate(-6deg);
-    border: 2px solid #a8a5a5;
-    box-shadow: 0 0 120px rgba(224, 13, 207, 0.6),0 0 70px rgba(248, 95, 240, 0.7);
+    border: 2px solid rgba(160, 12, 148, 0.6);
+    box-shadow: 0 0 120px rgba(224, 13, 207, 0.6), 0 0 70px rgba(248, 95, 240, 0.7);
+    margin-bottom: 20px;
 }
 
+/* Estilos dos botões */
+.Buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Buttons a {
+    text-decoration: none;
+}
+
+.Buttons .botao {
+    background-color: rgb(200, 19, 255);
+    padding: 10px 20px;
+    font-size: 0.7rem;
+    border-radius: 25px;
+    border: 2px solid rgb(200, 19, 255);
+    width: 180px;
+    color: wheat;
+    box-shadow: 0 0 120px rgba(224, 13, 207, 0.6), 0 0 70px rgba(248, 95, 240, 0.7);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Buttons .botao:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Responsividade */
 @media (max-width: 600px) {
-
-    .Inicio{
-        font-size: 2rem;
+    .Inicio {
+        font-size: 1.5rem;
+        padding: 10px;
     }
 
-    .move{
-        bottom: 0px;
-        top: 140px;
-    }
-    
-    #barra-container{
-        height: 170px;
+    #me {
+        height: 120px;
+        width: 120px;
     }
 
- }
+    .Buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .Buttons .botao {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}

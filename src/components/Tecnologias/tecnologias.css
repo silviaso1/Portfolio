@@ -1,20 +1,35 @@
-
+/* Estilos gerais para a seção de tecnologias */
 .tecnologias-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 70px;
     padding: 20px;
     flex-wrap: wrap;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 1s ease-in-out; /* Transição suave de opacidade */
+}
+
+/* Aplica o efeito de fade-in quando a seção se torna visível */
+.tecnologias-container.fade-in {
+    opacity: 1;
 }
 
 .tecnologia-card {
     border-radius: 10px;
     padding: 20px;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border: 2px solid white;
+    width: 240px;
+    box-shadow: 0 0 40px rgb(200, 19, 255);
+    border: 2px solid rgb(200, 19, 255);
     background-color: rgb(29, 29, 29);
     padding-bottom: 40px;
+}
+
+.tecnologia-card:hover {
+    box-shadow: 0 0 70px rgb(200, 19, 255);
+}
+
+.icones:hover {
+    size: 75px;
 }
 
 .tecnologia-card h3 {
@@ -33,7 +48,6 @@
 .icon-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
 }
 
 .icon-grid img {
@@ -43,5 +57,3 @@
     filter: grayscale(100%);
     transition: filter 0.3s ease;
 }
-
-

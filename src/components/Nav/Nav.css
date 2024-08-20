@@ -1,23 +1,30 @@
-.Nav{
+.Nav {
     color: white;
-    background-color: transparent; 
+    background-color: rgba(0, 0, 0, 0.3); 
     display: flex;
     justify-content: center;
     font-size: 1rem;
     padding-top: 10px;
-    z-index: 10;
+    padding-bottom: 10px;
+    position:absolute; /* Fixa a barra no topo */
+    top: 0; /* Garante que esteja no topo da página */
+    width: 100%; /* Faz a barra ocupar toda a largura da página */
+    z-index: 10; /* Garante que a barra esteja acima de outros elementos */
 }
-ul{
+
+ul {
     list-style: none;
     display: flex;
-
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
 }
-li{
+
+li {
     margin-left: 45px;
     padding: 5px;
 }
 
-#home{
+#home {
     background-color: rgb(200, 19, 255);
     border-radius: 5px;
     color: black;
