@@ -15,7 +15,7 @@
     font-size: 2.5rem;
     margin-top: 70px;
     margin-bottom: 20px;
-    -webkit-text-stroke: 0.25px #3cdd8e;
+    -webkit-text-stroke: 1.5px #3cdd8e;
     
 }
 
@@ -37,35 +37,12 @@
 /* Estilo do título do formulário */
 .contact-me-title {
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
     margin-bottom: 30px;
     color: white;
     -webkit-text-stroke:0.25px white;
 }
 
-/* Estilo das informações de contato */
-.contact-info {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-}
-
-.info-item {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.info-icon {
-    display: block;
-    font-size: 24px;
-    margin-bottom: 8px;
-    color: white;
-    -webkit-text-stroke:0.25px white;
-}
-
-/* Estilo do formulário */
 .contact-form {
     display: flex;
     flex-direction: column;

@@ -6,6 +6,7 @@
   text-align: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  height: auto;
 }
 
 .Formacao.fade-in {
@@ -25,7 +26,7 @@
 .experiencia-titulo {
   color: transparent;
   font-size: 2.5rem;
-  -webkit-text-stroke: 0.25px #3cdd8e;
+  -webkit-text-stroke: 1.5px #3cdd8e;
   margin-top: -2px;
   margin-bottom: 20px;
 }
@@ -46,18 +47,6 @@
   margin-bottom: 20px;
 }
 
-.linha-tempo {
-  position: absolute;
-  width: 4px;
-  background-color: #000;
-  top: 0;
-  bottom: 0;
-  left: -1%;
-  transform: translateX(-50%);
-  z-index: 0;
-  height: 145px;
-  margin-top: 35px; /* Certifique-se de que a linha esteja atrás das bolinhas */
-}
 
 .experiencia-item {
   display: flex;
@@ -76,8 +65,8 @@
   background: linear-gradient(#b6f829, #67dd0a);
   border: 2px solid #000;
   position: absolute;
-  left: -2.7%;
-  top: 40px;
+  left: -8px;
+  top: -2px;
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -85,14 +74,29 @@
 .experiencia-detalhes {
   flex: 1;
   text-align: left;
-  padding-left: 40px;
-  max-width: 600px;
+  padding: 10px;
+  width: 700px;
   background-color: #1f1e1e;
+
+}
+
+.python h4{
+  width: 220px;
+}
+.faculdade{
+  position: relative;
+  bottom: 90px;
+}
+#divisoria {
+  border: none; /* Remove o estilo de borda padrão */
+  height: 2px; /* Define a altura da linha */
+  background-color: #ffffff; /* Define a cor da linha */
+  width: 800px; /* Define a largura da linha */
+  margin: 20px 0; /* Ajusta o espaçamento acima e abaixo da linha */
 }
 
 .experiencia-detalhes h4 {
   font-size: 1.6rem;
-  width: 270px;
   margin: 0;
 }
 
@@ -111,7 +115,7 @@
 .experiencia-descricao {
   flex: 2;
   text-align: left;
-  padding-right: 40px;
+  margin-left: 30px;
 }
 
 .experiencia-descricao p {
@@ -138,17 +142,27 @@
     margin-top: 20px;
   }
 
+  .faculdade{
+    bottom: 0;
+  }
+
   .experiencia-detalhes, .experiencia-descricao {
-    padding: 0;
+    margin: 0;
+    margin-top: 25px;
     max-width: 100%;
   }
 
-  .linha-tempo {
-    left: 0;
+  .experiencia-detalhes h4{
+    font-size: 1.7rem;
+  }
+
+  #divisoria{
+    width: 250px;
   }
 
   .experiencia-bolinha {
-    left: 0;
+    left: -7px;
+    top: 30px;
   }
 
   .timeline {

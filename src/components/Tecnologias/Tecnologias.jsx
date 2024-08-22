@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaNode, FaPhp, FaVuejs, FaReact, FaFigma, FaGithub, FaPython } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaPhp, FaVuejs, FaReact,FaBootstrap, FaFigma, FaGithub,FaJava, FaPython, FaSass  } from 'react-icons/fa';
+import { SiMysql, SiXampp  } from "react-icons/si";
 import './tecnologias.css';
 
 export function Tecnologias() {
@@ -31,20 +32,23 @@ export function Tecnologias() {
   return (
     <div ref={ref} className={`tecnologias-container ${isVisible ? 'fade-in' : ''}`}>
       <div className="tecnologia-card">
-        <h3>Tool</h3>
-        <p>Ferramentas usadas para aplicações web.</p>
+        <h3>Tools</h3>
+        <p>Ferramentas e Linguagens usadas no desenvolvimento.</p>
         <div className="icon-grid">
-          <FaHtml5 size={50} color="white" className='icones' />
-          <FaCss3Alt size={50} color="white" className='icones' />
-          <FaJsSquare size={50} color="white" className='icones' />
-          <FaNode size={50} color="white" className='icones' />
-          <FaPhp size={50} color="white" className='icones' />
+        <FaHtml5 size={50} color="white" />
+            <FaCss3Alt size={50} color="white" />
+            <FaSass size={50} color='white'/>
+            <FaBootstrap size={50} color='white' />
+            <FaJsSquare size={50} color="white" />
+            <FaPhp size={50} color='white'/>
+            <FaPython size={50} color='white'/>
+            <FaJava size={50} color='white'/>
         </div>
       </div>
       
       <div className="tecnologia-card">
-        <h3>Framework</h3>
-        <p>Framework adotado em minhas aplicações.</p>
+        <h3>Frameworks</h3>
+        <p>Frameworks adotado em minhas aplicações.</p>
         <div className="icon-grid">
           <FaVuejs size={50} color="white" className='icones' />
           <FaReact size={50} color="white" className='icones' />
@@ -55,9 +59,10 @@ export function Tecnologias() {
         <h3>Outras Técnologias</h3>
         <p>Instrumentos empregados cotidianamente em aplicações.</p>
         <div className="icon-grid">
+          <SiMysql size={50} color='white'/>
+          <SiXampp size={50} color='white'/>
           <FaFigma size={50} color="white" className='icones' />
           <FaGithub size={50} color="white" className='icones' />
-          <FaPython size={50} color="white" className='icones' />
         </div>
       </div>
     </div>

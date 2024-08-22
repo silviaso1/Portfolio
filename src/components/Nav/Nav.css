@@ -1,32 +1,87 @@
 .Nav {
     color: white;
-    background-color: rgba(0, 0, 0, 0.3); 
     display: flex;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding-top: 10px;
     padding-bottom: 10px;
-    position:absolute; /* Fixa a barra no topo */
-    top: 0; /* Garante que esteja no topo da página */
-    width: 100%; /* Faz a barra ocupar toda a largura da página */
-    z-index: 10; /* Garante que a barra esteja acima de outros elementos */
+    position: absolute; 
+    top: 0; 
+    width: 100%; 
+    z-index: 10;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px; 
 }
 
 ul {
     list-style: none;
     display: flex;
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease;
 }
 
 li {
     margin-left: 45px;
     padding: 5px;
 }
+.outros:hover{
+    border-bottom: 2px solid rgb(215, 152, 235);
+}
 
 #home {
     background-color: rgb(200, 19, 255);
     border-radius: 5px;
-    color: black;
+    color: rgb(255, 255, 255);
     margin: 0;
+    padding: 10px;
+}
+
+/* Estilos para o ícone do menu */
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        text-align: center;
+        border-radius: 45px;
+    }
+
+    ul.open {
+        height: auto;
+        opacity: 1;
+        padding: 10px 0;
+    }
+
+    li {
+        margin: 10px 0;
+        margin-left: 0;
+    }
+
+    #home {
+        margin-bottom: 15px;
+    }
 }

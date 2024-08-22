@@ -51,19 +51,8 @@ export function ContactMe() {
     return (
         <div className={`ContactMe ${isVisible ? 'fade-in' : ''}`} ref={ref} id='contato'>
             <h1 id='contatar'>CONTATO</h1>
-            <h3 id='subtitke-contato'>Me manda um e-mail</h3>
             <div className="contact-me-container">
-                <h2 className="contact-me-title">.</h2>
-                <div className="contact-info">
-                    <div className="info-item">
-                        <FaMapMarkerAlt className="info-icon" />
-                        <p>Rio de Janeiro</p>
-                    </div>
-                    <div className="info-item">
-                        <FaGlobe className="info-icon" />
-                        <p>www.linkedin.com/in/silviaso1/</p>
-                    </div>
-                </div>
+                <h2 className="contact-me-title">Fale comigo</h2>
                 <form className="contact-form" onSubmit={handleSubmit}>
                     <div id='dados'>
                         <div className="form-group">

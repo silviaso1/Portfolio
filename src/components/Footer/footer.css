@@ -5,6 +5,8 @@
     padding: 40px 20px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
 }
 
 .footer-container {
